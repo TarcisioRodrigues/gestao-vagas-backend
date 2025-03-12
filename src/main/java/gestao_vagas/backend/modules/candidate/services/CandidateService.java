@@ -1,8 +1,8 @@
 package gestao_vagas.backend.modules.candidate.services;
 
 import gestao_vagas.backend.exceptions.UserFoundException;
-import gestao_vagas.backend.modules.candidate.Entity.CandidateEntity;
-import gestao_vagas.backend.modules.candidate.Repository.CandidateRepository;
+import gestao_vagas.backend.modules.candidate.entity.CandidateEntity;
+import gestao_vagas.backend.modules.candidate.repository.CandidateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

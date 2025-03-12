@@ -1,6 +1,6 @@
-package gestao_vagas.backend.modules.candidate.Repository;
+package gestao_vagas.backend.modules.candidate.repository;
 
-import gestao_vagas.backend.modules.candidate.Entity.CandidateEntity;
+import gestao_vagas.backend.modules.candidate.entity.CandidateEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

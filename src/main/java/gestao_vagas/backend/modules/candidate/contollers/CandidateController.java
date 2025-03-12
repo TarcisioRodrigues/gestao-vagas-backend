@@ -1,6 +1,6 @@
 package gestao_vagas.backend.modules.candidate.contollers;
 
-import gestao_vagas.backend.modules.candidate.Entity.CandidateEntity;
+import gestao_vagas.backend.modules.candidate.entity.CandidateEntity;
 import gestao_vagas.backend.modules.candidate.services.CandidateService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
