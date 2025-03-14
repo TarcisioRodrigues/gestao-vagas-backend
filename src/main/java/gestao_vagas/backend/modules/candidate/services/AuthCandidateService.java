@@ -36,7 +36,7 @@ public class AuthCandidateService {
         }
         var expiresIn=Instant.now().plus(Duration.ofMinutes(10));
         Algorithm algorithm = Algorithm.HMAC256(secretkey);
-        var token = JWT.create().withIssuer("javagas").withClaim("roles", Arrays.asList("candidate")).withExpiresAt(expiresIn).withSubject(candidate.getId().toString()).sign(algorithm);
+        var token = JWT.create().withIssuer("javagas").withClaim("roles", Arrays.asList("CANDIDATE")).withExpiresAt(expiresIn).withSubject(candidate.getId().toString()).sign(algorithm);
         var authCandidateResponse = AuthCandidateResponseDTO.builder().accessToken(token).expires_in(expiresIn.toEpochMilli()).build();
         return authCandidateResponse;
     }
